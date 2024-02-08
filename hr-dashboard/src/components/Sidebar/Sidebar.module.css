@@ -1,0 +1,52 @@
+.companylogo {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+}
+
+.sidebar {
+    margin-top: 100px;
+    width: 200px;
+    height: 80vh;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    padding: 20px;
+    overflow: auto;
+    color: black;
+    border-right: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    display: block; 
+    width: 100%; 
+    height: 30px;
+}
+
+.sidebar a:visited {
+    color: inherit; 
+}
+
+.selected{
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.linkText {
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* Add the desired left margin value */
+}
