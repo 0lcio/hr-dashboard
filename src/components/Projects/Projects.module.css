@@ -1,0 +1,27 @@
+.container {
+    margin-top: 85px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 350px;
+    margin: 1em;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project {
+    padding: 1em;
+    background-color: #cfcfcf;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: move; /* indicate that the item is draggable */
+}
