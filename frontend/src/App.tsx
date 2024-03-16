@@ -1,9 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Calendar from './components/Calendar/Calendar';
 import Team from './components/Team/Team';
+import Login from './components/Login/Login';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
           <Sidebar />
           <main>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/team" element={<Team />} />

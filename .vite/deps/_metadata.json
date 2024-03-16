@@ -1,0 +1,49 @@
+{
+  "hash": "90f5e341",
+  "configHash": "0cf7ed42",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "8468ec9f",
+  "optimized": {
+    "date-fns": {
+      "src": "../../node_modules/date-fns/index.mjs",
+      "file": "date-fns.js",
+      "fileHash": "daa6b3e1",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "d77e5229",
+      "needsInterop": true
+    },
+    "react-beautiful-dnd": {
+      "src": "../../node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js",
+      "file": "react-beautiful-dnd.js",
+      "fileHash": "a445a2df",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "760dab53",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "8e88b44d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UF7DBQZA": {
+      "file": "chunk-UF7DBQZA.js"
+    },
+    "chunk-TQDKLHUW": {
+      "file": "chunk-TQDKLHUW.js"
+    },
+    "chunk-LNEMQRCO": {
+      "file": "chunk-LNEMQRCO.js"
+    }
+  }
+}

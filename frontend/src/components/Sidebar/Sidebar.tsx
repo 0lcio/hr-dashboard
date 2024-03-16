@@ -19,7 +19,7 @@ function Sidebar() {
       <h2 className={styles.companylogo}>Company logo</h2>
       <nav className={styles.sidebar}>
         <ul>
-          <li><Link to="/" className={selectedLink === "/" ? styles.selected : ""} onClick={() => handleClick("/")}><span className={styles.linkText}>Dashboard</span></Link></li>
+          <li><Link to="/home" className={selectedLink === "/" ? styles.selected : ""} onClick={() => handleClick("/")}><span className={styles.linkText}>Dashboard</span></Link></li>
           <li><Link to="/projects" className={selectedLink === "/projects" ? styles.selected : ""} onClick={() => handleClick("/projects")}><span className={styles.linkText}>Projects</span></Link></li>
           <li><Link to="/calendar" className={selectedLink === "/calendar" ? styles.selected : ""} onClick={() => handleClick("/calendar")}><span className={styles.linkText}>Calendar</span></Link></li>
           <li><Link to="/team" className={selectedLink === "/team" ? styles.selected : ""} onClick={() => handleClick("/team")}><span className={styles.linkText}>Team</span></Link></li>
