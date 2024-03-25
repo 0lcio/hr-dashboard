@@ -29,11 +29,7 @@ function Copyright(props: any) {
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-interface SignInProps {
-  onLogin: () => void;
-}
-
-export default function SignIn({ onLogin }: SignInProps) {
+export default function SignIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -41,11 +37,6 @@ export default function SignIn({ onLogin }: SignInProps) {
       email: data.get('email'),
       password: data.get('password'),
     });
-
-    // Add your authentication logic here...
-
-    // If authentication is successful, call the onLogin function
-    onLogin();
   };
 
   return (
