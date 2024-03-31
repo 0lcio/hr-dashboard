@@ -1,6 +1,6 @@
 import styles from './Projects.module.css'; 
 import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Mock data
 const initialData = {
@@ -9,9 +9,21 @@ const initialData = {
   completed: [{ id: '5', name: 'Project 5' }, { id: '6', name: 'Project 6' }],
 };
 
-function Projects() {
-  const [data, setData] = useState(initialData);
+function useLocalStorageState<T>(key: string, defaultValue: T): [T, React.Dispatch<React.SetStateAction<T>>] {
+  const [state, setState] = useState<T>(() => {
+    const storedValue = window.localStorage.getItem(key);
+    return storedValue !== null ? JSON.parse(storedValue) : defaultValue;
+  });
 
+  useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(state));
+  }, [key, state]);
+
+  return [state, setState];
+}
+
+function Projects() {
+  const [data, setData] = useLocalStorageState('projectsData', initialData);
   const onDragEnd = (result: DropResult) => {
     const { source, destination } = result;
 
